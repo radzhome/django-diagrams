@@ -1,0 +1,9 @@
+{% load jsplumber %}
+
+{% jsplumb_css %}
+
+    {% jsplumb_javascript False %}
+
+    {% autoescape on %}
+        {% jsplumb_settings %}
+    {% endautoescape %}
