@@ -1,0 +1,217 @@
+/* Assets LESS */
+.window {
+  border: 1px solid #346789;
+  box-shadow: 2px 2px 5px #aaa;
+  -o-box-shadow: 2px 2px 5px #aaa;
+  -webkit-box-shadow: 2px 2px 5px #aaa;
+  -moz-box-shadow: 2px 2px 5px #aaa;
+  -moz-border-radius: 0.5em;
+  border-radius: 0.5em;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  /*width:70%;*/
+  width: 14em;
+  height: 12em;
+  text-align: center;
+  z-index: 20;
+  margin: 0 auto;
+  background-color: #eeeeef;
+  color: black;
+  font-family: helvetica;
+  padding: 0.5em 0.2em;
+  font-size: 1em;
+  /*overflow: hidden;*/
+  position: absolute;
+}
+.window:hover {
+  box-shadow: 2px 2px 5px #444;
+  -o-box-shadow: 2px 2px 5px #444;
+  -webkit-box-shadow: 2px 2px 5px #444;
+  -moz-box-shadow: 2px 2px 5px #444;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+div.window select {
+  width: auto;
+}
+/*
+.dragActive {
+    border: 3px solid #346789;
+}*
+
+/* COLORS FOR THE BOXES */
+.category-0 {
+  background-color: #e0e0ff;
+  border-color: #333399;
+  color: #000066;
+}
+.category-1 {
+  background-color: #e0ffe0;
+  border-color: #339933;
+  color: #006600;
+}
+.category-2 {
+  background-color: #ffe0e0;
+  border-color: #993333;
+  color: #660000;
+}
+.category-3 {
+  background-color: #ffffe0;
+  border-color: #999933;
+  color: #666600;
+}
+.category-4 {
+  background-color: #ffe0ff;
+  border-color: #993399;
+  color: #660066;
+}
+/*
+.category-5 {
+	background-color: #e0ffff;
+	border-color: #339999;
+	color: #006666;
+}
+
+.category-6 {
+	background-color: white;
+	border-color: #339999;
+	color: black;
+}
+
+.category-7 {
+	background-color: orange;
+	border-color: #339999;
+	color: brown;
+} */
+/* * JS PLUMB SPECIFIC * */
+/** JSPLUMB ARTEFACTS **/
+._jsPlumb_connector {
+  z-index: 1;
+}
+/** COMMON ELEMENT PROPERTIES **/
+.shape {
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+  position: absolute;
+  cursor: pointer;
+  text-align: center;
+  color: #333;
+}
+/** SHAPES **/
+[data-shape=Rectangle] {
+  background-color: #dadada !important;
+  border: solid grey 2px;
+  -webkit-print-color-adjust: exact;
+  /*
+    @media print{
+        background-color: #dadada !important;
+    }*/
+}
+[data-shape=Rectangle].ro-group {
+  width: 150px;
+  height: 300px;
+}
+/*
+[data-shape=Rectangle].ro-storage {
+  border-color: none;
+  border: solid #808080 1px;
+  width: 200px;
+  height: 228px;
+  background-image: url(ro_storage.png) !important;
+}
+[data-shape=Rectangle].cpp-system {
+  border: none;
+  width: 200px;
+  height: 127px;
+  background-color: transparent !important;
+  background-image: url(cpp_system.png) !important;
+}
+[data-shape=Rectangle].sediment-carbon-group {
+  width: 100px;
+  height: 175px;
+}
+[data-shape=Rectangle].calcium-carbonate-group {
+  width: 50px;
+  height: 100px;
+  font-size: 9px;
+}
+[data-shape=Ellipse] {
+  width: 210px;
+  height: 70px;
+  background-image: url(ellipse.png);
+}
+[data-shape=Ellipse] .isolation-valve {
+  width: 40px;
+  height: 40px;
+}
+[data-shape=Circle] {
+  width: 150px;
+  height: 150px;
+  background-image: url(circle.png);
+}
+[data-shape=Circle].isolation-valve {
+  width: 35px;
+  height: 35px;
+  background-image: url(isolation_valve.png) !important;
+}
+[data-shape=Triangle] {
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  background-image: url(triangle.png);
+}
+._90[data-shape=Triangle] {
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  background-image: url(triangle_90.png);
+}
+._180[data-shape=Triangle] {
+  width: 150px;
+  height: 150px;
+  background-image: url(triangle_180.png);
+}
+._180[data-shape=Triangle].filter {
+  width: 75px;
+  height: 75px;
+  line-height: 50px;
+  background-image: url(filter.png) !important;
+}
+._180[data-shape=Triangle].check-valve {
+  line-height: 20px;
+  background-image: url(check_valve.png) !important;
+  width: 35px;
+  height: 35px;
+}
+[data-shape=Diamond] {
+  width: 150px;
+  height: 150px;
+  left: 550px;
+  top: 150px;
+  line-height: 150px;
+  background-image: url(diamond.png);
+}*/
+[data-shape=Square] {
+  min-width: 5px;
+  min-height: 5px;
+  background-color: #dadada;
+  border: 2px solid grey;
+}
+/*
+[data-shape=Square].pressure-switch {
+  background-color: none;
+  border: none;
+  width: 35px;
+  height: 35px;
+  background-image: url(pressure_switch.png) !important;
+}*/
+.asset-image {
+  position: absolute;
+  left: 0px;
+  z-index: -1;
+}
+@media print {
+  * {
+    color: green !important;
+  }
+}

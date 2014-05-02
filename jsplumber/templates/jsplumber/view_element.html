@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load jsplumber %}
+<html>
+  <head>
+    <title>{% block jsplumber_drawing_title %}Title{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% jsplumb_css %}
+    {% jsplumb_javascript False %}
+  </head>
+  <body>
+
+    {% block jsplumber_content %}{% endblock %}
+    {# jsplumb_javascript jquery=True #}
+
+
+  </body>
+</html>
+<!-- drawing title -->
+<!--
+
+edit drawing template
+view (print) drawing template
+edit components template
+
+-->
